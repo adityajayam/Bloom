@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome_leaf_margin_start">88dp</dimen>
+    <dimen name="welcome_leaf_margin_top">72dp</dimen>
+    <dimen name="logo_margin_top">48dp</dimen>
+    <dimen name="welcome_subtitle_height">32dp</dimen>
+    <dimen name="welcome_button_height">48dp</dimen>
+    <dimen name="button_rounded_radius">24dp</dimen>
+    <dimen name="welcome_button_margin_top">40dp</dimen>
+    <dimen name="layout_margin_start_left">16dp</dimen>
+    <dimen name="welcome_subtitle_text_size">16sp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="h1_text_size">18sp</dimen>
+    <dimen name="body_1_text_size">12sp</dimen>
+    <dimen name="edit_text_height">56dp</dimen>
+    <dimen name="email_address_margin_top">8dp</dimen>
+    <dimen name="t_c_text_view_height">72dp</dimen>
+</resources>

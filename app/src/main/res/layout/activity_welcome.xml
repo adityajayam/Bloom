@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="welcomeActivity"
+            type="com.example.bloom.WelcomeActivity" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".WelcomeActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/welcome_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/welcome_bg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/welcome_leaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/welcome_leaf_margin_start"
+            android:layout_marginLeft="@dimen/welcome_leaf_margin_start"
+            android:layout_marginTop="@dimen/welcome_leaf_margin_top"
+            android:src="@drawable/welcome_illos" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_leaf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_margin_top"
+            android:src="@drawable/logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subtitle"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/welcome_subtitle_height"
+            android:layout_below="@+id/logo"
+            android:fontFamily="@font/nunito_sans_light"
+            android:gravity="center|bottom"
+            android:text="@string/welcome_subtitle_text"
+            android:textSize="@dimen/welcome_subtitle_text_size" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/welcome_button_height"
+            android:layout_below="@id/subtitle"
+            android:layout_marginStart="@dimen/layout_margin_start_left"
+            android:layout_marginLeft="@dimen/layout_margin_start_left"
+            android:layout_marginTop="@dimen/welcome_button_margin_top"
+            android:layout_marginEnd="@dimen/layout_margin_start_left"
+            android:layout_marginRight="@dimen/layout_margin_start_left"
+            android:background="@drawable/welcome_button"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:letterSpacing="0.1"
+            android:text="@string/create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="@dimen/button_text_size" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/welcome_button_height"
+            android:layout_below="@id/create_account"
+            android:layout_marginStart="@dimen/layout_margin_start_left"
+            android:layout_marginLeft="@dimen/layout_margin_start_left"
+            android:layout_marginEnd="@dimen/layout_margin_start_left"
+            android:layout_marginRight="@dimen/layout_margin_start_left"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:letterSpacing="0.1"
+            android:text="@string/log_in"
+            android:onClick="@{()->welcomeActivity.launchLoginActivity()}"
+            android:textAllCaps="false"
+            android:textColor="@color/logInButtonTextColor"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+</layout>

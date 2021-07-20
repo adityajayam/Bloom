@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/layout_margin_start_left"
+    android:paddingRight="@dimen/layout_margin_start_left"
+    android:background="@color/colorOnSecondary"
+    tools:context=".LogIn">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/log_in_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center"
+        android:text="@string/log_in_subtitle"
+        android:textColor="@color/h1SubtitleColor"
+        android:textSize="@dimen/h1_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_address_outlined_text_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/email_address_margin_top"
+        android:hint="@string/email_address"
+        android:textColorHint="@color/h1SubtitleColor"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/log_in_subtitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_address"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_light"
+            android:textSize="@dimen/button_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_outlined_text_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:hint="@string/password"
+        android:textColorHint="@color/h1SubtitleColor"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_address_outlined_text_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_light"
+            android:inputType="textPassword"
+            android:textSize="@dimen/button_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/t_and_c"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t_c_text_view_height"
+        android:fontFamily="@font/nunito_sans_light"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/t_c_text"
+        android:textColor="@color/h1SubtitleColor"
+        android:textSize="@dimen/body_1_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_outlined_text_field" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/welcome_button_height"
+        android:background="@drawable/welcome_button"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:letterSpacing="0.1"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorOnSecondary"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintTop_toBottomOf="@id/t_and_c" />
+</androidx.constraintlayout.widget.ConstraintLayout>

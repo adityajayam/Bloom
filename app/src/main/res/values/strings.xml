@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bloom</string>
+    <string name="welcome_subtitle_text">Beautiful home garden solutions</string>
+    <string name="create_account">Create account</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in_subtitle">Log in with email</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password(8+ characters)</string>
+    <string name="t_c_text">By clicking, you agree to our <a href=""> Terms of Use</a> and consent to our <a href="">Privacy Policy</a></string>
+</resources>
