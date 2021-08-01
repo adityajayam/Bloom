@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/layout_margin_start_left"
+    android:paddingRight="@dimen/layout_margin_start_left"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        style="@style/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search_background"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="@string/search_view_hint" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/browse_theme_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/browse_theme_text_view_height"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="bottom"
+        android:text="@string/browse_themes"
+        android:textColor="@color/h1SubtitleColor"
+        android:textSize="@dimen/h1_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/theme_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/browse_theme_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_home_design_subtitle_height"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="bottom"
+        android:text="@string/design_your_home_garden"
+        android:textColor="@color/h1SubtitleColor"
+        android:textSize="@dimen/h1_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theme_list" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/filter_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/filter_list"
+        app:layout_constraintBottom_toBottomOf="@id/text_home"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

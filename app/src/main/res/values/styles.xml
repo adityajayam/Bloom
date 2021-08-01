@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <style name="searchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">34sp</item>
+        <item name="fontFamily">@font/nunito_sans_bold</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+</resources>

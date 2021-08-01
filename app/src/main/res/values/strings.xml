@@ -7,4 +7,18 @@
     <string name="email_address">Email address</string>
     <string name="password">Password(8+ characters)</string>
     <string name="t_c_text">By clicking, you agree to our <a href=""> Terms of Use</a> and consent to our <a href="">Privacy Policy</a></string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_cart">Cart</string>
+    <string name="search_view_hint">Search</string>
+    <string name="browse_themes">Browse themes</string>
+    <string name="desert_chic">Desert chic</string>
+    <string name="tiny_terrarium">Tiny terrarium</string>
+    <string name="jungle_vibes">Jungle vibes</string>
+    <string name="easy_care">Easy care</string>
+    <string name="statements">Statements</string>
+    <string name="design_your_home_garden">Design your home garden</string>
+    <string name="add_text">ADD</string>
 </resources>

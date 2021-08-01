@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cart_list_layout_height"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/theme_image"
+            android:layout_width="@dimen/cart_list_layout_height"
+            android:layout_height="match_parent"
+            android:contentDescription="Theme name"
+            android:scaleType="fitXY"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/theme_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/cart_list_layout_text_margin_left"
+            android:layout_marginLeft="@dimen/cart_list_layout_text_margin_left"
+            android:layout_marginTop="@dimen/cart_list_layout_text_margin_top"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.015"
+            android:text="@string/desert_chic"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintStart_toEndOf="@+id/theme_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/cart_list_layout_text_margin_left"
+            android:layout_marginLeft="@dimen/cart_list_layout_text_margin_left"
+            android:fontFamily="@font/nunito_sans_light"
+            android:text="@string/browse_themes"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintStart_toEndOf="@+id/theme_image"
+            app:layout_constraintTop_toBottomOf="@id/theme_name" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cart_list_layout_add_cart_height"
+            android:layout_marginTop="@dimen/cart_list_layout_text_margin_left"
+            android:background="@drawable/welcome_button"
+            android:elevation="@dimen/elevation"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/add_text"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/cart_list_layout_text_margin_left"
+            android:layout_marginLeft="@dimen/cart_list_layout_text_margin_left"
+            android:background="@drawable/cart_list_divider_background"
+            app:layout_constraintBottom_toBottomOf="@id/theme_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/theme_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

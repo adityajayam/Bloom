@@ -18,7 +18,7 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     fun launchLoginActivity() {
-        val launch = Intent(this, LogIn::class.java)
+        val launch = Intent(this, LogInActivity::class.java)
         startActivity(launch)
     }
 }
