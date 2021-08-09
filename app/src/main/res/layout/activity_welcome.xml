@@ -50,7 +50,7 @@
             android:textSize="@dimen/welcome_subtitle_text_size" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/create_account"
+            android:id="@+id/login_sign_up_button"
             android:layout_width="match_parent"
             android:layout_height="@dimen/welcome_button_height"
             android:layout_below="@id/subtitle"
@@ -64,6 +64,7 @@
             android:letterSpacing="0.1"
             android:text="@string/create_account"
             android:textAllCaps="false"
+            android:onClick="@{()->welcomeActivity.launchCreateAccountActivity()}"
             android:textColor="@color/colorOnSecondary"
             android:textSize="@dimen/button_text_size" />
 
@@ -71,7 +72,7 @@
             android:id="@+id/log_in"
             android:layout_width="match_parent"
             android:layout_height="@dimen/welcome_button_height"
-            android:layout_below="@id/create_account"
+            android:layout_below="@id/login_sign_up_button"
             android:layout_marginStart="@dimen/layout_margin_start_left"
             android:layout_marginLeft="@dimen/layout_margin_start_left"
             android:layout_marginEnd="@dimen/layout_margin_start_left"

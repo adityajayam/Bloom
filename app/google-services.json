@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "451659456235",
+    "project_id": "bloom-42010",
+    "storage_bucket": "bloom-42010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451659456235:android:ea7a59f1949143410ca8ae",
+        "android_client_info": {
+          "package_name": "com.example.bloom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451659456235-th2mp741vnmkltinrhrq2fe9cgq3ase8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bloom",
+            "certificate_hash": "8cb989e52942d803712ca420d7d15163d99a0a25"
+          }
+        },
+        {
+          "client_id": "451659456235-ua6r9uj7urooapjotfe6dfflmfj6rmul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr12ElyAUfXmB-BSFOSZyzI1t6VgB7qqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451659456235-ua6r9uj7urooapjotfe6dfflmfj6rmul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

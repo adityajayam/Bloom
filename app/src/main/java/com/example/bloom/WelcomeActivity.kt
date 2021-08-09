@@ -21,4 +21,14 @@ class WelcomeActivity : AppCompatActivity() {
         val launch = Intent(this, LogInActivity::class.java)
         startActivity(launch)
     }
+
+    fun launchCreateAccountActivity() {
+        val launch = Intent(this, LogInActivity::class.java)
+        launch.putExtra(CREATE_ACCOUNT, true)
+        startActivity(launch)
+    }
+
+    companion object {
+        const val CREATE_ACCOUNT = "CREATE ACCOUNT FLOW"
+    }
 }
