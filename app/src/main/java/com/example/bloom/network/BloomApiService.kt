@@ -4,13 +4,12 @@ import com.example.bloom.data.CollectionMedia
 import com.example.bloom.data.MyCollectionList
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import retrofit2.Call
+import okhttp3.ResponseBody
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Headers
-import retrofit2.http.Path
+import retrofit2.http.*
+
 
 private const val BASE_URL = "https://api.pexels.com/v1/"
 private const val AUTH_KEY = "563492ad6f91700001000001d5f114a2026041bd903c6f390dc43fe4"
@@ -29,6 +28,10 @@ interface BloomApiService {
     @Headers("Authorization:$AUTH_KEY")
     @GET("collections/{id}")
     suspend fun getCollectionMedia(@Path("id") collectionId: String): Response<CollectionMedia>
+
+    @GET
+    @Streaming
+    suspend fun downloadImage(@Url fileUrl: String): ResponseBody
 }
 
 /**

@@ -12,6 +12,7 @@
     <string name="title_activity_home">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_favourites">Favourites</string>
+    <string name="title_search">Search</string>
     <string name="title_profile">Profile</string>
     <string name="title_cart">Cart</string>
     <string name="search_view_hint">Search</string>
@@ -23,4 +24,11 @@
     <string name="statements">Statements</string>
     <string name="design_your_home_garden">Design your home garden</string>
     <string name="add_text">ADD</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="download_image_channel">
+        <item name="image_download_channel_name">Image Download</item>
+        <item name="channel_description">Downloading specified Image</item>
+        <item name="content_text_when_running">Downloading Image</item>
+        <item name="content_text_when_finished">Download complete</item>
+    </string-array>
 </resources>

@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.bloom.databinding.FragmentCartBinding
-import com.example.bloom.databinding.FragmentProfileBinding
 
 class CartFragment : Fragment() {
 
@@ -24,7 +23,7 @@ class CartFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         cartViewModel =
             ViewModelProvider(this).get(CartViewModel::class.java)
 

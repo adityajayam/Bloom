@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Notification channel details-->
+    <!--<array name="download_image_channel">
+        <item name="image_download_channel_name">Image Download</item>
+        <item name="channel_description">Downloading specified Image</item>
+    </array>-->
+</resources>
